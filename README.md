@@ -1,73 +1,79 @@
-# React + TypeScript + Vite
+# Engineering Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+公開URL: https://m-fujita.github.io/portfolio/
 
-Currently, two official plugins are available:
+転職活動向けに作成した、シングルページ構成のエンジニアリング・ポートフォリオです。
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+短時間で以下を把握できるように設計しています。
 
-## React Compiler
+- マルチクラウドとOSレイヤーを横断できる実務力
+- 生成AI活用を含むDX推進の実績
+- 実装から運用まで一気通貫で進める推進力
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Profile
 
-## Expanding the ESLint configuration
+- 名前: 藤田 基寛 (Motohiro Fujita)
+- アカウント名: m-fujita
+- 職種: システムエンジニア / DX推進
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Portfolio Highlights
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Hero: 名前・肩書き・インフラタグをファーストビューで提示
+- About Me: クラウド、OS運用、LLM活用を横断する強みを明示
+- Projects: 主要実績をカードUIで整理
+- Skills: Cloud / OS-Env / Languages / Frontend をカテゴリ表示
+- Contact: GitHub とメールを即アクセス可能に配置
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Featured Projects
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1. 社内AI FAQ検索システム 
+    - Local LLM (Gemma3) を用いた構成設計と実装を主導
+2. インフラ・開発環境構築
+    - Linux / Windows を横断した開発環境標準化、Dotfiles運用
+3. 本ポートフォリオサイト
+    - React + TypeScript + Tailwind CSS による静的配信向け実装
+
+## Tech Stack
+
+- React / TypeScript / Vite / Tailwind CSS
+- AWS / GCP / Linux / Windows / Python
+
+## Design Notes
+
+- クリーンで信頼感のあるUI
+- 軽いギーク感を加えたガラス調・ブラー・グラデーション表現
+- ダークモード切替対応
+- モバイルからデスクトップまでレスポンシブ対応
+
+## Local Development
+
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+開発サーバー起動後、表示URLは Vite の出力に従ってください。
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Build
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run build
 ```
+
+成果物は dist に出力されます。
+
+## Preview
+
+```bash
+npm run preview
+```
+
+## Main Files
+
+- [src/App.tsx](src/App.tsx): ページ構造とセクション実装
+- [src/index.css](src/index.css): Tailwindベースのデザイン定義
+- [vite.config.ts](vite.config.ts): Vite設定とTailwindプラグイン
+
+## Contact
+
+- Email: moto4685@gmail.com

@@ -35,21 +35,27 @@ function App() {
     const projects = useMemo(
         () => [
             {
-                name: "社内AI FAQシステム「まるサポ」",
+                name: "社内FAQ AI検索システム",
                 summary:
-                    "ローカルLLM + RAGを用いた社内FAQ基盤。要件定義から運用設計までをリードし、現場の検索体験を改善。",
-                tech: ["Python", "Local LLM", "RAG", "Vector DB", "Linux"],
+                    "ローカルLLMを用いた社内FAQ基盤。要件定義から運用設計までをリードし、現場の検索体験を改善。",
+                tech: ["Python", "Gemma3", "RAG", "Vector DB", "Linux"],
             },
             {
                 name: "インフラ・開発環境構築",
-                summary:
-                    "Linux/Windowsを横断した開発体験の標準化。Dotfilesと自動化スクリプトで再現性と立ち上がり速度を向上。",
-                tech: ["Lua", "Bash", "Git", "Neovim", "Ubuntu/Plasma"],
+                summary: "Linux/Windowsを横断した提案～障害対応の経験。",
+                tech: [
+                    "Bash",
+                    "PowerShell",
+                    "AWS",
+                    "GCP",
+                    "Docker",
+                    "Terraform",
+                ],
             },
             {
                 name: "本ポートフォリオサイト",
                 summary:
-                    "採用担当者が短時間で強みを理解できる情報設計を重視。モダンフロントエンド構成で静的配信に最適化。",
+                    "短時間で強みを理解できる情報設計を重視。静的配信に最適化。",
                 tech: [
                     "React",
                     "TypeScript",
@@ -85,7 +91,7 @@ function App() {
                     <div className="relative flex flex-wrap items-start justify-between gap-6">
                         <div className="max-w-3xl">
                             <p className="mb-3 inline-flex items-center gap-2 rounded-full border border-cyan-600/25 bg-cyan-500/10 px-3 py-1 text-xs font-mono font-semibold uppercase tracking-[0.2em] text-cyan-700 dark:border-cyan-300/40 dark:text-cyan-200">
-                                Software Engineer / DX Promotion Leader
+                                Software Engineer(web) / DX Promotion Leader
                             </p>
                             <h1 className="font-display text-4xl font-bold leading-tight text-slate-900 sm:text-5xl dark:text-white">
                                 藤田 基寛{" "}
@@ -94,7 +100,7 @@ function App() {
                                 </span>
                             </h1>
                             <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-700 sm:text-lg dark:text-slate-200">
-                                マルチクラウドからOSレイヤー、さらに生成AI活用まで。現場課題を技術で解決する、実装主導のアーキテクト志向エンジニア。
+                                マルチクラウドからOSレイヤー、さらに生成AI活用まで。現場課題を技術で解決する、フルスタック志向エンジニア。
                             </p>
                         </div>
 
@@ -125,7 +131,7 @@ function App() {
                             About Me / Core Strengths
                         </h2>
                         <p className="mt-4 leading-relaxed text-slate-700 dark:text-slate-200">
-                            AWS/GCPのクラウド構築だけでなく、Linux/Windows運用を含むインフラ全体を理解したうえで、業務課題をプロダクトに落とし込む実装力が強みです。社内AI活用でも、RAG設計・アプリ実装・運用設計を一気通貫で推進し、技術導入を成果へ接続してきました。
+                            AWS/GCPのクラウド構築だけでなく、Linux/Windows運用を含むインフラ全体を理解したうえで、業務課題をプロダクトに落とし込む実装力が強みです。社内DX推進においても、要件定義・システム開発・運用保守までを一気通貫で担当し、技術導入を成果へ接続してきました。
                         </p>
                     </div>
                     <div className="rounded-2xl border border-slate-200/80 bg-white/70 p-5 shadow-lg shadow-slate-900/5 backdrop-blur-md dark:border-slate-700 dark:bg-slate-800/60 dark:shadow-black/20">
@@ -206,7 +212,7 @@ function App() {
                                     rel="noreferrer"
                                     className="font-semibold text-cyan-700 hover:text-cyan-500 dark:text-cyan-300 dark:hover:text-cyan-200"
                                 >
-                                    github.com/m-fujita
+                                    github.com/mochi7415
                                 </a>
                             </li>
                             <li className="text-slate-700 dark:text-slate-100">
@@ -215,7 +221,7 @@ function App() {
                                     href="mailto:m-fujita@example.com"
                                     className="font-semibold text-cyan-700 hover:text-cyan-500 dark:text-cyan-300 dark:hover:text-cyan-200"
                                 >
-                                    m-fujita@example.com
+                                    moto4685@gmail.com
                                 </a>
                             </li>
                         </ul>
@@ -223,7 +229,7 @@ function App() {
                 </section>
 
                 <footer className="px-6 py-6 text-center text-xs text-slate-500 sm:px-10 dark:text-slate-400">
-                    m-fujita portfolio / Built with React + TypeScript +
+                    mochi7415 portfolio / Built with React + TypeScript +
                     Tailwind CSS + Vite
                 </footer>
             </main>
