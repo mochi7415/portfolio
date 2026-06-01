@@ -1,6 +1,6 @@
 # Engineering Portfolio
 
-公開URL: https://m-fujita.github.io/portfolio/
+公開URL(Github Pages): https://mochi7415.github.io/portfolio/
 
 転職活動向けに作成した、シングルページ構成のエンジニアリング・ポートフォリオです。
 
@@ -26,7 +26,7 @@
 
 ## Featured Projects
 
-1. 社内AI FAQ検索システム 
+1. 社内AI FAQ検索システム
     - Local LLM (Gemma3) を用いた構成設計と実装を主導
 2. インフラ・開発環境構築
     - Linux / Windows を横断した開発環境標準化、Dotfiles運用
@@ -40,8 +40,6 @@
 
 ## Design Notes
 
-- クリーンで信頼感のあるUI
-- 軽いギーク感を加えたガラス調・ブラー・グラデーション表現
 - ダークモード切替対応
 - モバイルからデスクトップまでレスポンシブ対応
 
