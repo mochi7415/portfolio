@@ -38,7 +38,7 @@ function App() {
                 name: "社内FAQ AI検索システム",
                 summary:
                     "ローカルLLMを用いた社内FAQ基盤。要件定義から運用設計までをリードし、現場の検索体験を改善。",
-                tech: ["Python", "Gemma3", "RAG", "Vector DB", "Linux"],
+                tech: ["Python", "Gemma3", "Oracle", "Vector DB", "Linux"],
             },
             {
                 name: "インフラ・開発環境構築",
@@ -94,9 +94,9 @@ function App() {
                                 Software Engineer(web) / DX Promotion Leader
                             </p>
                             <h1 className="font-display text-4xl font-bold leading-tight text-slate-900 sm:text-5xl dark:text-white">
-                                藤田 基寛{" "}
+                                Motohiro Fujita
                                 <span className="text-cyan-700 dark:text-cyan-300">
-                                    (Motohiro Fujita)
+                                    {/* (Motohiro Fujita) */}
                                 </span>
                             </h1>
                             <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-700 sm:text-lg dark:text-slate-200">
@@ -131,7 +131,7 @@ function App() {
                             About Me / Core Strengths
                         </h2>
                         <p className="mt-4 leading-relaxed text-slate-700 dark:text-slate-200">
-                            AWS/GCPのクラウド構築だけでなく、Linux/Windows運用を含むインフラ全体を理解したうえで、業務課題をプロダクトに落とし込む実装力が強みです。社内DX推進においても、要件定義・システム開発・運用保守までを一気通貫で担当し、技術導入を成果へ接続してきました。
+                            インフラエンジニアの経験と、社内DX推進の内製開発経験を活かし、インフラ全体を理解したうえで、業務課題をプロダクトに落とし込む実装力が強みです。要件定義・システム開発・運用保守までを一気通貫で担当し、技術導入を成果へ接続してきました。
                         </p>
                     </div>
                     <div className="rounded-2xl border border-slate-200/80 bg-white/70 p-5 shadow-lg shadow-slate-900/5 backdrop-blur-md dark:border-slate-700 dark:bg-slate-800/60 dark:shadow-black/20">
