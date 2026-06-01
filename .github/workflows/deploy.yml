@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
     push:
-        branches: "main" # masterをお使いの場合は 'master' に変更
+        branches: "main" 
 
 permissions:
     contents: read
@@ -14,7 +14,7 @@ concurrency:
     cancel-in-progress: true
 
 env:
-    FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true # Node 24への移行警告に対応
+    FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
     deploy:
@@ -29,7 +29,7 @@ jobs:
             - name: Set up Node
               uses: actions/setup-node@v4
               with:
-                  node-version: 24 # 20から24にアップグレード
+                  node-version: 24
                   cache: "npm"
 
             - name: Install dependencies
